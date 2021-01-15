@@ -1,0 +1,6 @@
+1. Initiate the images repository from start() of GameManager (not from the constructor of ImageRepository)
+2. Create the Timer in start() of GameManager, so GamaManager is not ActionListener.
+3. Remove the logic of accumulateScore and setLives from MainPanel, so it can be handle by any new logic.
+4. Add 2 level abstraction for Observers and listeners
+5. support multi listeners
+6. single resposibility of repository, maimPanel,
