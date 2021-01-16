@@ -66,7 +66,6 @@ public class GameManager{
 
     private void initiateGraphics(){
         int panelWidth = mainPanel.getSize().width;
-//        Image img =new ImageIcon(Consts.resourcesPath()+ Consts.PLANE_IMAGE).getImage();
         Image img =new ImageIcon(getClass().getClassLoader().getResource(Consts.PLANE_IMAGE)).getImage();
         IMove horizontalCycleMove =  new HorizontalCycleMove(panelWidth);
         graphicsRepository.addImage(Consts.PLANE,panelWidth,0,planeVelocity,img,horizontalCycleMove);
